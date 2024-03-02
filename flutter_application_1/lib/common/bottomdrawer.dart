@@ -13,11 +13,13 @@ class MyBottomNavBar extends StatelessWidget {
         BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",
-            backgroundColor: const Color.fromARGB(255, 255, 253, 253)),
+            backgroundColor: Colors.grey),
         BottomNavigationBarItem(
             icon: Icon(Icons.collections_sharp), label: "Coats"),
         BottomNavigationBarItem(
             icon: Icon(Icons.horizontal_distribute), label: "Hoodies"),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.horizontal_distribute), label: "Sweat Shirts"),
       ],
       onTap: (index) {
         switch (index) {
@@ -29,6 +31,9 @@ class MyBottomNavBar extends StatelessWidget {
             break;
           case 2:
             Navigator.pushNamed(context, "/hoodies");
+            break;
+          case 3:
+            Navigator.pushNamed(context, "/sweatshirt");
             break;
           default:
         }

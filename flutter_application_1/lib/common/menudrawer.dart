@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/homescreen.dart';
 import 'package:flutter_application_1/screens/coatscreen.dart';
 import 'package:flutter_application_1/screens/hoodiescreen.dart';
+import 'package:flutter_application_1/screens/sweatshirtscreen.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
@@ -50,6 +51,9 @@ class MenuDrawer extends StatelessWidget {
               break;
             case 'Hoodies':
               screen = const HoodieScreen();
+              break;
+            case 'Sweat Shirts':
+              screen = const SweatShirtScreen();
               break;
             default:
           }
