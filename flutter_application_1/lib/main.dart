@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/hoodiescreen.dart';
+import 'package:flutter_application_1/screens/meritscreen.dart';
 import 'package:flutter_application_1/screens/sweatshirtscreen.dart';
 import 'screens/coatscreen.dart';
 import 'screens/homescreen.dart';
-// import 'common/bottomdrawer.dart';
+import 'screens/aboutus.dart';
 
 void main() {
   runApp(const ClothApp());
@@ -21,6 +22,8 @@ class ClothApp extends StatelessWidget {
         "/coat": (context) => CoatScreen(),
         "/hoodies": (context) => HoodieScreen(),
         "/sweatshirt": (context) => SweatShirtScreen(),
+        "/aboutUS": (context) => AboutUSScreen(),
+        "/merit": (context) => MeritScreen(),
       },
       initialRoute: "/",
     );

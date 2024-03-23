@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/aboutus.dart';
 import 'package:flutter_application_1/screens/homescreen.dart';
 import 'package:flutter_application_1/screens/coatscreen.dart';
 import 'package:flutter_application_1/screens/hoodiescreen.dart';
+import 'package:flutter_application_1/screens/meritscreen.dart';
 import 'package:flutter_application_1/screens/sweatshirtscreen.dart';
 
 class MenuDrawer extends StatelessWidget {
@@ -29,7 +31,14 @@ class MenuDrawer extends StatelessWidget {
       ),
     )));
 
-    final Set<String> menuTitles = {"Home", "Coats", "Hoodies", "Sweat Shirts"};
+    final Set<String> menuTitles = {
+      "Home",
+      "Coats",
+      "Hoodies",
+      "Sweat Shirts",
+      "About Us",
+      "Merit"
+    };
 
     menuTitles.forEach((element) {
       menuItems.add(ListTile(
@@ -54,6 +63,12 @@ class MenuDrawer extends StatelessWidget {
               break;
             case 'Sweat Shirts':
               screen = const SweatShirtScreen();
+              break;
+            case 'About Us':
+              screen = const AboutUSScreen();
+              break;
+            case 'Merit':
+              screen = const MeritScreen();
               break;
             default:
           }
